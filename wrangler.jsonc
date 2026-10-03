@@ -1,0 +1,12 @@
+{
+  // Cloudflare Workers 배포 설정: Quartz로 위키를 만든 뒤 public 폴더를 웹사이트로 공개합니다.
+  "name": "my-solidarity-wiki",
+  "compatibility_date": "2026-09-01",
+  "build": {
+    "command": "npx quartz build"
+  },
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
